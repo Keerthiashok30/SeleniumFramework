@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="workproject.testcomponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="isWordPresent(failed)">
+    <classes>
+      <class name="workproject.test.LandingTest">
+        <methods>
+          <include name="isWordPresent" invocation-numbers="1"/>
+          <include name="launchApp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- workproject.test.LandingTest -->
+    </classes>
+  </test> <!-- isWordPresent(failed) -->
+</suite> <!-- Failed suite [Suite] -->

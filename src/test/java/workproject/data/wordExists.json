@@ -1,0 +1,13 @@
+[
+	{
+		"testCaseName": "Check whether the AUTOMATION word is present on the page",
+		"searchWord" : "automation",
+		"wordCheck" : "automation"
+	},
+	{
+		"testCaseName": "Check whether the TEST AUTOMATION word is present on the page",
+		"searchWord" : "automation",
+		"wordCheck" : "test automation"
+	}
+	
+]
