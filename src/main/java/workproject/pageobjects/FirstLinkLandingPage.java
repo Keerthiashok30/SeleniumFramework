@@ -25,7 +25,6 @@ public class FirstLinkLandingPage
     word = word.toLowerCase();
     int count = pageSource.split(word, -1).length - 1;
     System.out.println("The word '" + word + "' appears " + count + " times on the page.");
-    //SoftAssert softAssert = new SoftAssert();
     Assert.assertTrue(pageSource.contains(word),"The page does NOT contain the text: " + word);
     System.out.println("The page contains the text: " + word);
     }
