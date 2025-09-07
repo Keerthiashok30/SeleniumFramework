@@ -1,6 +1,5 @@
 package workproject.testcomponents;
 
-
 import java.util.HashMap;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
@@ -13,7 +12,6 @@ import workproject.resources.ExtentReporterNG;
 
 public class Listeners extends BaseTest implements ITestListener
 {
-
 	ExtentTest test;
 	ExtentReports extent =ExtentReporterNG.getReportObject();
     @Override

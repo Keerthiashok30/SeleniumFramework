@@ -24,15 +24,12 @@ import workproject.pageobjects.LandingPage;
 
 public class BaseTest
 {
-	
 	public WebDriver driver;
 	public LandingPage landingPage;
 	public Properties prop=new Properties();
 
-	
 	public WebDriver initializeDriver() throws IOException
 	{
-		
 		FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"//src//main//java//workproject//resources//GlobalData.properties");
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
@@ -59,8 +56,6 @@ public class BaseTest
 		driver.manage().window().maximize();
 		return driver;
 	}
-	
-	
 		
 	public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException
 		{

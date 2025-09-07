@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SearchEnginePage 
 {
-	
 	WebDriver driver;
 	
 	public SearchEnginePage(WebDriver driver)

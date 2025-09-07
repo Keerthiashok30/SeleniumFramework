@@ -1,6 +1,5 @@
 package workproject.test;
 
-
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -18,13 +17,11 @@ public class LandingTest extends BaseTest
 	public void isWordPresent(HashMap<String,String> input)
 	{
 		 try {
-			 
 				landingPage.searchBox(input.get("searchWord"));
 				SearchEnginePage searchEngine=new SearchEnginePage(driver);
 				searchEngine.clickFirstLink();
 				FirstLinkLandingPage linkLandingPage=new FirstLinkLandingPage(driver);
 				linkLandingPage.wordCheck(input.get("wordCheck"));
-
 			 } catch (Exception e) 
 			 {
 		       e.printStackTrace();
